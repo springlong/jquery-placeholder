@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="utf-8">
+    <title>基于jQuery实现的针对IE6~9表单placeholder属性的兼容处理</title>
+    <script src="jquery-1.11.1.min.js"></script>
+    <script src="../jquery-placeholder.js"></script>
+    <link rel="stylesheet" href="main.css" />
+    <style>
+        #instruction p{padding-left:2em;text-indent:0;overflow:hidden;}
+        #instruction p label{float:left;margin-right:5px;}
+        #instruction input{padding:5px 10px;border:1px solid #ddd;font-size:14px;}
+        #instruction textarea{height:4em;padding:5px 10px;border:1px solid #ddd;line-height:18px;font-size:14px;}
+        #instruction button{text-align:left;}
+        #doScript{margin-top:50px;}
+    </style>
+</head>
+<body>
+<div id="instruction">
+    <h1>基于jQuery实现的针对IE6~9表单placeholder属性的兼容处理</h1>
+    <p>
+        <label for="frmCountry">地区：</label>
+        <input id="frmCountry" data-placeholder-hidefocus="false" data-placeholder-color="#999" />
+    </p>
+    <p>
+        <label for="frmName">姓名：</label>
+        <input id="frmName" placeholder="您的姓名" />
+    </p>
+    <p>
+        <label for="frmIntro">介绍：</label>
+        <textarea id="frmIntro" placeholder="自我介绍"></textarea>
+    </p>
+    <div id="doScript">
+        <p><button class="btnTest">$("#frmName").val("Jerry Sun")</button></p>
+        <p><button class="btnTest">$("#frmName").val("")</button></p>
+        <p><button class="btnTest">$("#frmCountry").attr("placeholder", "国家地区")</button></p>
+        <p><button class="btnTest">$("#frmCountry").attr("placeholder", "")</button></p>
+        <p><button class="btnTest">$("#frmName").attr("placeholder", "请输入您的姓名")</button></p>
+        <p><button class="btnTest">$("#frmName").attr({"placeholder": "姓名为必填字段"})</button></p>
+    </div>
+</div>
+<script>
+    $(".btnTest").on("click", function(){
+        eval($(this).html());
+    });
+
+    $.placeholderHideFocus = true;
+    $("input[placeholder], textarea[placeholder]").placeholder();
+</script>
+</body>
+</html>

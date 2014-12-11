@@ -1,0 +1,55 @@
+
+*{padding:0;margin:0;}
+body{width:100%;padding-bottom:100px;font:14px/2em "Microsoft YaHei";background:#fff;}
+h1{padding:10px 0 30px;}
+p{text-indent:2em;}
+strong{color:#c00000;}
+em,i{font-weight:bold;font-style:italic;}
+button{height:30px;line-height:normal;}
+a{color:#0D71D1;text-decoration:underline;}
+a:hover{color:#E5760D;}
+code{padding:2px 4px;border:1px solid #ddd;border-radius:4px;margin:0 2px;background:#fdfdfd;font-family:"Courier New";}
+code.block{display:block;padding:5px;}
+.clearfix:after{content:"";clear:both;display:block;height:0;}
+.clearfix{zoom:1;}
+
+ul,ol{overflow:visible;padding-left:50px;margin:10px 0;}
+li{overflow:visible;}
+li ul,li ol{padding-left:20px;}
+ul>li{list-style:square;}
+ul ul>li{list-style:disc;}
+ol>li{list-style:decimal;}
+li p{text-indent:0;}
+
+#instruction{width:980px;padding:20px;border:5px solid green;margin:20px auto;}
+#instruction h1{padding-left:1em;}
+#instruction p{margin:10px 0;}
+#instruction button{padding:5px 15px;}
+#instruction ul,#instruction ol{padding-left:2em;}
+#instruction li,#instruction .list li li{padding:10px;border:1px dashed #ddd;margin-top:-1px;margin-bottom:0;list-style-position:inside;}
+#instruction .list li li p.desc{margin-left:0;text-indent:0;}
+#instruction .list{padding-left:25px;margin-top:20px;}
+#instruction .list li{padding:10px;border:2px dashed #ddd;margin-bottom:50px;list-style-position:outside;}
+#instruction .list .html_code{margin-left:15px;}
+#instruction .list p{margin:5px 5px 5px 2em;}
+#instruction .list p span,#instruction .vartype{font-size:12px;color:#5F8B64;}
+#instruction .list .demo{position:relative;padding:5px 0 2px 0;border-bottom:1px dashed #ddd;margin:0 5px 0 2em;}
+#instruction .list .demo:hover{background:#f1f1f1;}
+#instruction .list .demo:hover code{background:#f3f3f3;}
+#instruction .list .button{text-align:right;border:0;}
+#instruction .list .button button{width:200px;height:30px;margin-top:10px;text-align:center;text-indent:10px;}
+#instruction .list .title,.codeTitle{margin-left:0;border-bottom:none;margin-bottom:10px;font-size:16px;font-weight:bold;color:#333;background:#A7C46F;}
+#instruction .list .title code,.codeTitle code{font-style:italic;padding:0;border:none;border-radius:0;margin:0;background:transparent;font-family:"Courier New";}
+#instruction .list .title2{margin-top:30px;background-color:#ddd;}
+#instruction .list .titleNo{color:#999;}
+#instruction .list .params,.codeParams{padding:5px 0;border-top:1px dashed #ccc;border-bottom:1px dashed #ccc;margin:10px 5px 10px 2em;}
+#instruction .list .params p,.codeParams p{margin-left:0;margin-right:0;}
+#instruction .list .params .level2:before,.codeParams .level2:before{content:"";padding-left:5px;border-left:5px solid #ccc;}
+#instruction .list .result{position:absolute;right:0;top:5px;float:left;width:150px;height:24px;*margin-top:-6px;text-align:left;color:#333;}
+#instruction .list .result.long{width:200px;}
+#instruction li.nostyle{list-style:none !important;}
+#instruction .separate{margin-top:30px;background-color:#eee;}
+#instruction .add{padding-left:25px;margin-top:20px;}
+#instruction .add .title{margin:30px 0 10px;}
+#instruction .snippet-wrap{margin-left:2em;}
+#instruction li .snippet-wrap{margin-left:0;}
