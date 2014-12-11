@@ -1,7 +1,8 @@
 
 *{padding:0;margin:0;}
 body{width:100%;padding-bottom:100px;font:14px/2em "Microsoft YaHei";background:#fff;}
-h1{padding:10px 0 30px;}
+h1{padding:10px 0 20px 28px;}
+h2{padding:10px 0 20px 28px;}
 p{text-indent:2em;}
 strong{color:#c00000;}
 em,i{font-weight:bold;font-style:italic;}
@@ -22,7 +23,6 @@ ol>li{list-style:decimal;}
 li p{text-indent:0;}
 
 #instruction{width:980px;padding:20px;border:5px solid green;margin:20px auto;}
-#instruction h1{padding-left:1em;}
 #instruction p{margin:10px 0;}
 #instruction button{padding:5px 15px;}
 #instruction ul,#instruction ol{padding-left:2em;}
