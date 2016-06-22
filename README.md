@@ -31,8 +31,8 @@ $("input[placeholder], textarea[placeholder]").placeholder();
 
 你可以点击下面的链接来查看placeholder属性在所有浏览器里面的兼容情况：
 
-1. [Chrome、Firefox行为模拟](http://demo.fedlife.cn/jquery/jquery-placeholder/demo.html)
-2. [IE10+行为模拟](http://demo.fedlife.cn/jquery/jquery-placeholder/demo-2.html)
+1. [Chrome、Firefox行为模拟](http://www.fedlife.cn/demo/jquery/jquery-placeholder/demo.html)
+2. [IE10+行为模拟](http://www.fedlife.cn/demo/jquery/jquery-placeholder/demo-2.html)
 
 
 ## 表现
