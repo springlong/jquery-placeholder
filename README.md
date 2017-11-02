@@ -10,7 +10,7 @@ placeholder属性在各浏览器的兼容情况如下图所示：
 
 ![img](images/HTML5_placeholder.png)
 
-从上图我们看到，除了IE6~9之外，其他厂商的浏览器以及IE10+都已经支持placeholder属性。由于在网站项目中，我们会经常使用到占位为本这项服务，又考虑到IE6~9的市场情况——截止2014年11月30日，这部分用户约占47%（来自[百度流量研究院](http://tongji.baidu.com/data/browser/)），因此我们有必要开发这款基于jQuery实现的针对IE6~9浏览器表单placeholder属性的兼容处理插件来满足项目需求。
+从上图我们看到，除了IE6-9之外，其他厂商的浏览器以及IE10+都已经支持placeholder属性。由于在网站项目中，我们会经常使用到占位为本这项服务，又考虑到IE6~9的市场情况——截止2014年11月30日，这部分用户约占47%（来自[百度流量研究院](http://tongji.baidu.com/data/browser/)），因此我们有必要开发这款基于jQuery实现的针对IE6~9浏览器表单placeholder属性的兼容处理插件来满足项目需求。
 
 ## 使用
 
@@ -31,8 +31,8 @@ $("input[placeholder], textarea[placeholder]").placeholder();
 
 你可以点击下面的链接来查看placeholder属性在所有浏览器里面的兼容情况：
 
-1. [Chrome、Firefox行为模拟](http://www.fedlife.cn/demo/jquery/jquery-placeholder/demo.html)
-2. [IE10+行为模拟](http://www.fedlife.cn/demo/jquery/jquery-placeholder/demo-2.html)
+1. [Chrome、Firefox行为模拟](//htmlpreview.github.io/?https://github.com/springlong/jquery-placeholder/blob/master/demo/demo.html)
+2. [IE10+行为模拟](//htmlpreview.github.io/?https://github.com/springlong/jquery-placeholder/blob/master/demo/demo-2.html)
 
 
 ## 表现
