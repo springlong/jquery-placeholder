@@ -1,7 +1,6 @@
 /**
  * @file        基于jQuery实现的针对IE6~9表单placeholder属性的兼容处理
  * @version     1.0.0
- * @update      2014/12/10
  * @author      龙泉<yangtuan2009@126.com>
  */
 
