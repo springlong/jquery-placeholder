@@ -3,13 +3,13 @@
 <head>
     <meta charset="utf-8">
     <title>基于jQuery实现的针对IE6~9表单placeholder属性的兼容处理</title>
-    <script src="jquery-1.11.1.min.js"></script>
+    <script src="js/jquery-1.11.1.min.js"></script>
     <script src="../src/jquery.placeholder.js"></script>
-    <link rel="stylesheet" href="main.css" />
+    <link rel="stylesheet" href="css/main.css" />
     <style>
         #instruction p{padding-left:2em;text-indent:0;overflow:hidden;}
         #instruction p label{float:left;margin-right:5px;}
-        #instruction input{float:left;padding:5px 10px;border:1px solid #ddd;font-size:14px;}
+        #instruction input{padding:5px 10px;border:1px solid #ddd;font-size:14px;}
         #instruction textarea{height:4em;padding:5px 10px;border:1px solid #ddd;line-height:18px;font-size:14px;}
         #instruction button{text-align:left;}
         #doScript{margin-top:30px;}
@@ -18,10 +18,10 @@
 <body>
 <div id="instruction">
     <h1>基于jQuery实现的针对IE6~9表单placeholder属性的兼容处理</h1>
-    <h2>Chrome、Firefox行为模拟</h2>
+    <h2>IE10+行为模拟</h2>
     <p>
         <label for="frmCountry">地区：</label>
-        <input id="frmCountry" data-placeholder-hidefocus="true" data-placeholder-color="#999" />
+        <input id="frmCountry" data-placeholder-hidefocus="false" data-placeholder-color="#999" />
     </p>
     <p>
         <label for="frmName">姓名：</label>
@@ -45,7 +45,8 @@
         eval($(this).html());
     });
 
-    $("input[placeholder],textarea[placeholder]").placeholder();
+    $.placeholderHideFocus = true;
+    $("input[placeholder], textarea[placeholder]").placeholder();
 </script>
 </body>
 </html>

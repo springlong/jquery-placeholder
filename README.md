@@ -29,11 +29,6 @@ $("input[placeholder], textarea[placeholder]").placeholder();
 
 这样，我们就完成了对IE6~9浏览器表单placeholder属性的兼容处理。
 
-你可以点击下面的链接来查看placeholder属性在所有浏览器里面的兼容情况：
-
-1. [Chrome、Firefox行为模拟](//htmlpreview.github.io/?https://github.com/springlong/jquery-placeholder/blob/master/demo/demo.html)
-2. [IE10+行为模拟](//htmlpreview.github.io/?https://github.com/springlong/jquery-placeholder/blob/master/demo/demo-2.html)
-
 
 ## 表现
 

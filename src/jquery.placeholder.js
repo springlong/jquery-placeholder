@@ -5,13 +5,29 @@
  * @author      龙泉<yangtuan2009@126.com>
  */
 
-(function($)
-{
+(function (factory) {
+
+    if (typeof define === 'function' && define.amd) {
+        // AMD module
+        define(['jquery'], factory);
+    }
+    else if(typeof module !== "undefined" && module.exports) {
+        // Node/CommonJS
+        // Seajs build
+        factory(require('jquery'));
+    }
+    else {
+        // 浏览器全局模式
+        factory(jQuery);
+    }
+
+})(function ($) {
+
     $.placeholderColor = $.placeholderColor || "#c1c1c1";
     $.placeholderHideFocus = $.placeholderHideFocus || false;
 
-    $.fn.placeholder = function()
-    {
+    $.fn.placeholder = function() {
+
         if(support_placeholder) return this;
 
         return this.each(function(i, ele){
@@ -108,4 +124,4 @@
         };
     }
 
-})(jQuery);
+});
